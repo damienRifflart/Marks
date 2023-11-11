@@ -1,0 +1,37 @@
+body {
+    background-color: #1E1E1E;
+}
+
+#get-average-btn {
+    position: relative;
+    width: 300px;
+    height: 70px;
+    border: none;
+    background: #e74c3c;
+    color: #fff;
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    font-size: 25px;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+}
+  
+#get-average-btn:hover {
+    opacity: 1;
+}
+  
+#get-average-btn:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+}
+
+#average-text {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
