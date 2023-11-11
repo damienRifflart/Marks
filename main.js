@@ -5,8 +5,8 @@ async function login(page) {
     // Login
     await page.waitForSelector('button#bouton_eleve', { visible: false });
     await page.click('button#bouton_eleve');
-    await page.type('input#username', username);
-    await page.type('input#password', password);
+    await page.type('input#username', 'd.rifflart');
+    await page.type('input#password', 'Jesaisplus1/');
     await page.click('button#bouton_valider');
 
     // Wait for navigation after login
@@ -43,7 +43,7 @@ async function scrapeData(page) {
 
 async function getAverage(url, arg1) {
     try {
-        const browser = await puppeteer.launch({ headless: switchValue });
+        const browser = await puppeteer.launch({ headless: 'new' });
         const page = await browser.newPage();
         await page.goto(url);
 
@@ -71,8 +71,8 @@ const {ipcMain} = require('electron');
 
 const createWindow = () => {
   win = new BrowserWindow({
-      width: 800,
-      height: 450,
+      width: 1920,
+      height: 1080,
       webPreferences: {
         nodeIntegration: true,
         contextIsolation: false
@@ -82,11 +82,8 @@ const createWindow = () => {
       icon: path.join(__dirname, 'logo.png'),
     });
 
-    ipcMain.on('get-average-called', (event, data) => {
-      username = data.username
-      password = data.password
-      switchValue = data.headlessSwitch 
-    
+    ipcMain.on("get-average-called", () => {
+      getAverage('https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=e3s1')
     });
 
     win.loadFile('index.html')
