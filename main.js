@@ -12,12 +12,6 @@ async function login(page) {
     // Wait for navigation after login
     await page.waitForNavigation();
 
-    // Navigate to MBN
-    await page.goto('https://cas.monbureaunumerique.fr/delegate/redirect/EDU');
-    await page.waitForNavigation();
-
-    await page.click('a[href="https://cas.monbureaunumerique.fr/login?service=https%3A%2F%2Flyc-armand.monbureaunumerique.fr%2Fsg.do%3FPROC%3DIDENTIFICATION_FRONT%26ACTION%3DVALIDER"]');
-
     // Get to the grades page
     await page.goto('https://lyc-armand.monbureaunumerique.fr/sg.do?PROC=CONSULTER_RELEVE&ACTION=AFFICHER_RELEVE_NOTES_ELEVE');
 }
@@ -49,6 +43,8 @@ async function getAverage(url, arg1) {
 
         // Call login function
         await login(page);
+
+        await page.waitForTimeout(100);;
 
         // Call scrapeData function
         let average = await scrapeData(page);
@@ -94,7 +90,7 @@ const createWindow = () => {
 }
 
 function sendAverage() {
-  return getAverage('https://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO?execution=e3s1')
+  return getAverage('https://cas.monbureaunumerique.fr/delegate/redirect/EDU')
 }
 
 ipcMain.handle("get-average", sendAverage);
