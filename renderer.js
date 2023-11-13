@@ -5,7 +5,8 @@ const passwordInput = document.querySelector('input[name="password"]');
 const headlessSwitch = document.getElementById('switchHeadless');
 const averageButton = document.getElementById("get-average-btn");
 const averageText = document.getElementById("average-text");
-const bestaAverageText = document.getElementById("bestAverage-text");
+const bestAverageText = document.getElementById("bestAverage-text");
+const worstAverageText = document.getElementById("worstAverage-text");
 const eyeIcon = document.getElementById('eyeIcon');
 
 averageButton.addEventListener("click", async () => {
@@ -19,12 +20,16 @@ averageButton.addEventListener("click", async () => {
         switchValue = false;
     }
 
+    ipcRenderer.send("get-average-called", { username, password, headlessSwitch: switchValue });
+
     // Update the average text
-    const result = await ipcRenderer.invoke("get-average");
-    averageText.innerText = 'Your average is: ' + result;
-    bestaAverageText.innerText = 'Best average: ' + bestaAvg;
+    const { average, bestAvg, bestAvgSubject, worstAvg, worstAvgSubject} = await ipcRenderer.invoke("get-average");
+    averageText.innerText = 'Your average is: ' + average + '\u{1F386}';
+    bestAverageText.innerText = 'Best average: ' + bestAvg + ' in ' + bestAvgSubject + '\u{1F44F}';
+    worstAverageText.innerText = 'Worst average: ' + worstAvg + ' in ' + worstAvgSubject + '\u{1F62D}';
 });
 
+// Password visible or not
 eyeIcon.addEventListener('click', () => {
     if (passwordInput.type == "password") {
         passwordInput.type = "text";

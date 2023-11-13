@@ -4,7 +4,6 @@
   <head>
     <title>Marks</title>
     <link rel="stylesheet" href="style.css">
-
     <script src="main.js"></script>
     <script src="./renderer.js" defer></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -13,9 +12,21 @@
 
   <body>
 
-    <div class="average-text-div">
+    <div class="div-container">
         <h1 id="average-text">Your average is: None.</h1>
         <h1 id="estimated-time">estimated time: 7s</h1>
+    </div>
+
+    <div class="div-container">
+      <h1 id="bestAverage-text">Best average: None.</h1>
+    </div>
+
+    <div class="div-container">
+      <h1 id="worstAverage-text">Worst average: None.</h1>
+    </div>
+
+    <div class="div-container">
+      <h1 id="bestAverage-text">Fun fact: None.</h1>
     </div>
   
     <div class="options">
@@ -41,8 +52,6 @@
     </div>
 
     <button id="get-average-btn">Get Average</button>
-  
-  
 
   </body>
 
