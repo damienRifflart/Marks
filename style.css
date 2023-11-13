@@ -8,6 +8,7 @@ body {
     letter-spacing: 1px;
     font-size: 15px;
     font-family: "Poppins";
+    padding-left: 10px;
 }
 
 #bestAverage-text {
@@ -16,6 +17,7 @@ body {
     letter-spacing: 1px;
     font-size: 15px;
     font-family: "Poppins";
+    padding-left: 10px;
 }
 
 #worstAverage-text {
@@ -24,6 +26,7 @@ body {
     letter-spacing: 1px;
     font-size: 15px;
     font-family: "Poppins";
+    padding-left: 10px;
 }
 
 #funFact-text {
@@ -32,6 +35,7 @@ body {
     letter-spacing: 1px;
     font-size: 15px;
     font-family: "Poppins";
+    padding-left: 10px;
 }
 
 #estimated-time {
