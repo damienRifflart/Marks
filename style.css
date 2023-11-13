@@ -26,6 +26,14 @@ body {
     font-family: "Poppins";
 }
 
+#funFact-text {
+    color: #f9f6f6;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: "Poppins";
+}
+
 #estimated-time {
     display: flex;
     align-items: center; 
@@ -44,7 +52,7 @@ body {
     padding: 4px;
     background-color: #252525;
     border-radius: 10px;
-    width: 500px;
+    width: 700px;
     margin-bottom: 10px;
 }
 
