@@ -70,7 +70,7 @@ async function scrapeData(page) {
 
   // Simulate a 20 and find out the new average + the new global average
   let averagePerSubject = Math.floor(((sumGrades + 20) / (gradesPerSubject.length + 1)) * 100) / 100;
-  let newGlobalAverage = Math.floor((sumAverages - averages[randomIndex] + averagePerSubject) / averages.length * 100) / 100;;
+  let newGlobalAverage = Math.floor((sumAverages - averages[randomIndex] + averagePerSubject) / averages.length * 100) / 100;
 
 
   return {
