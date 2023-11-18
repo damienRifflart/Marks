@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Marks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="./renderer.js" defer></script>
+  </head>
+
+  <body>
+
+    <div class="average-calculator">
+      <div class="div-container">
+          <h1 id="average-text">Your average is: None.</h1>
+          <h1 id="estimated-time">estimated time: 7s</h1>
+      </div>
+
+      <div class="div-container">
+        <h1 id="bestAverage-text">Best average: None.</h1>
+      </div>
+
+      <div class="div-container">
+        <h1 id="worstAverage-text">Worst average: None.</h1>
+      </div>
+
+      <div class="div-container">
+        <h1 id="funFact-text">Fun fact: None.</h1>
+      </div>
+    </div>
+
+    <div class="assignments">
+      <div class="div-container">
+        <h1 id="assignment-title">None.</h1>
+        <h1 id="assignment-description">None.</h1>
+      </div>
+    </div>
+    
+    <div class="options">
+
+      <!-- Username -->
+      <div class="usernameInput">
+        <label for="username" class="text">Username:</label>
+        <input value="d.rifflart" placeholder="Insert MBN username..." name="username" class="input" id="usernameInput">
+      </div>
+        
+      <!-- Password -->
+      <div class="passwordInput">
+        <label for="password" class="text">Password:</label>
+        <div class="inputContainer">
+            <input value="UPuv2J;2GM^T+j2" placeholder="Insert MBN password..." name="password" class="input" id="passwordInput" type="password">
+            <img class="eyeIcon" id="eyeIcon" src='./graphics/eye-close.png/'>
+        </div>
+      </div>
+
+      <!-- Password visible or not -->
+      <label class="switch">
+        <input type="checkbox" id="switchHeadless">
+        <span class="slider"></span>
+      </label>
+
+      <!-- Headless switch -->
+      <h1 class="headless-switch">Headless</h1>
+    </div>
+
+    <button id="get-average-btn">Get Average</button>
+
+  </body>
+
+
+</html>
