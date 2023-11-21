@@ -41,50 +41,11 @@ body {
     position: fixed;
 }
 
-#options {
-    display: flex;
-}
-
-#passwordInput {
-    position: relative;
-}
-
-#eyeIcon {
-    position: absolute;
-    right: 30px;
-    top: 20%;
-}
-
-#input {
-    background-color: var(--secondColor);
-    border-radius: 5px;
-    border: none;
-    color: var(--textColor);
-    font-size: 16px;
-    margin-bottom: 15px;
-    margin-right: 20px;
-    padding: 10px;
-    transition: width 0.3s;
-    width: 180px;
-}
-  
-#input:focus {
-    outline: 2px solid #e74c3c;
-    width: 200px;
-}
-
-#eyeIcon {
-    cursor: pointer;
-    position: flex;
-    width: 22px;
-}
-
 #get-average-btn {
     align-items: center;
     background: var(--accentColor);
     border-radius: 5px;
     border: none;
-    box-shadow: #c0392b 0px 7px 2px;
     color: #f9f6f6;
     display: flex;
     font-size: 20px;
@@ -97,7 +58,6 @@ body {
     padding: 1em;
     position: relative;
     text-transform: uppercase;
-    transition: 0.2s;
     width: 200px;
 }
 
@@ -106,7 +66,6 @@ body {
 }
 
 #get-average-btn:active {
-    box-shadow: #c0392b 0px 3px 2px;
     top: 4px;
 }
 
@@ -114,18 +73,35 @@ body {
     align-items: center;
     background-color: var(--secondColor);
     border-radius: 10px;
+    box-shadow: 5px 5px 50px black;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 405px;
+    margin-left: 10px;
+    margin-top: 10px;
     padding-top: 20px;
     position: absolute;
     width: 65px;
 }
 
 #logo {
-    border-radius: 10px;
-    width: 40px;
+    width: 45px;
 } 
+
+#logoIcon {
+    font-size: 29px;
+    margin-left: 7%;
+    margin-top: 11%;
+    position: absolute;
+}
+
+#logoBackground {
+    background-color: var(--accentColor);
+    border-radius: 7px;
+    height: 45px;
+    position: absolute;
+    width: 45px;
+}
 
 #icon {
     align-items: center;
@@ -140,17 +116,24 @@ body {
 #settingsIcon {
     color: var(--textColor);
     font-size: 25px;
-    margin-top: 110px;
+    margin-top: 100px;
     transition: transform 0.15s;
 }
 
-#icon:hover,
+#icon:hover{
+    transform: translateY(3px);
+}
+
 #settingsIcon:hover {
-    transform: translateY(4px);
+    transform: rotateZ(45deg);
 }
 
 #navbar-icons-list {
-    margin-top: 80px;
+    margin-top: 120px;
+}
+
+#navbar-icons-list a {
+    text-decoration: none;
 }
 
 #content {

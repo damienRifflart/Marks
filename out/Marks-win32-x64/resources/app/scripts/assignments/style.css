@@ -1,0 +1,111 @@
+:root{
+    --accentColor: #e74c3c;
+    --backgroundColor: #1E1E1E;
+    --secondColor: #252525;
+    --textColor: #f9f6f6;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: 'Poppins';
+}
+
+#get-assignments-btn {
+    align-items: center;
+    background: var(--accentColor);
+    border-radius: 5px;
+    border: none;
+    color: #f9f6f6;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    opacity: 1;
+    padding: 1em;
+    position: relative;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+#get-assignments-btn:hover {
+    opacity: 0.8;
+}
+
+#get-assignments-btn:active {
+    top: 4px;
+}
+
+#sidebar {
+    align-items: center;
+    background-color: var(--secondColor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 405px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    width: 65px;
+    box-shadow: 5px 5px 50px black;
+}
+
+#logo {
+    width: 45px;
+} 
+
+#logoIcon {
+    position: absolute;
+    font-size: 29px;
+    margin-top: 11%;
+    margin-left: 7%;
+}
+
+#logoBackground {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: var(--accentColor);
+    border-radius: 7px;
+}
+
+#icon {
+    align-items: center;
+    color: var(--textColor);
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 30px;
+    transition: transform 0.15s;
+}
+
+#settingsIcon {
+    color: var(--textColor);
+    font-size: 25px;
+    margin-top: 100px;
+    transition: transform 0.15s;
+}
+
+#icon:hover{
+    transform: translateY(3px);
+}
+
+#settingsIcon:hover {
+    transform: rotateZ(45deg);
+}
+
+#navbar-icons-list {
+    margin-top: 120px;
+}
+
+#navbar-icons-list a {
+    text-decoration: none;
+}
+
+#content {
+    margin-left: 80px;
+    padding: 16px;
+}

@@ -134,7 +134,7 @@ const createWindow = () => {
     });
 
     // Get data from renderer.js
-    ipcMain.on('get-average-called', (event, data) => {
+    ipcMain.on('sending-credentials', (event, data) => {
       username = data.username
       password = data.password
     });
@@ -147,7 +147,7 @@ function sendAverage() {
 }
 
 // Send data to renderer.js
-ipcMain.handle('get-average', sendAverage);
+ipcMain.handle('send-average', sendAverage);
 
 app.whenReady().then(() => {
   createWindow()

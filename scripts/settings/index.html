@@ -2,16 +2,19 @@
 <html>
 
     <head>
-        <title>Marks</title>
-        <link rel='stylesheet' href='style.css'>
-        <script src='./renderer.js' defer></script>
+        <title>Marks - Settings</title>
+        <link rel='stylesheet' href='./style.css'>
+        <script src='./main.js' defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
 
     <body>
 
         <div id='sidebar'>
-            <img src="C:\Users\Eleve\Documents\GitHub\Marks\graphics\logo.png" id="logo">
+            <div id="logo">
+                <div id="logoBackground"></div>
+                <i id="logoIcon" class="fa-solid fa-graduation-cap"></i>
+            </div>
 
             <div id="navbar-icons-list">
                 <a href='C:\Users\Eleve\Documents\GitHub\Marks\scripts\average\index.html'>
@@ -29,7 +32,23 @@
         </div>
 
         <div id="content">
-            <!-- TODO: settings -->
+            <div id='options'>
+                <!-- Username -->
+                <div id='usernameInput'>
+                    <input placeholder='Enter MBN username' id='input' class='input' type='text'>
+                </div>
+                
+                <!-- Password -->
+                <div id='passwordInput'>
+                    <input placeholder='Enter MBN password' id='input' class='input' type='password'>
+                    <i id="eyeIcon" class="fa-solid fa-eye"></i>
+                </div>
+
+                <h1 id="colorText">Choose your accent color:</h1>
+                <input type="color" id="colorPicker">
+
+                <button id='reset-options-btn'>Reset options</button>
+            </div>
         </div>
 
     </body>
