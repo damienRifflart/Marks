@@ -3,11 +3,11 @@
   "productName": "Marks",
   "version": "1.0.0",
   "description": "A basic cross-platform app that uses an API to show analytics of grades from MBN.",
-  "main": "./scripts/average/main.js",
+  "main": "./main.js",
   "scripts": {
-    "start": "electron .",
-    "make": "electron-forge make",
-    "package": "electron-forge package"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "keywords": [],
   "author": "Damien",
@@ -26,20 +26,5 @@
     "@electron-forge/maker-zip": "^6.4.2",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
     "electron": "^17.4.11"
-  },
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "icon": "logo.png"
-      },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "marks"
-          }
-        }
-      ]
-    }
   }
 }
