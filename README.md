@@ -11,10 +11,10 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#download">Download</a> •
+  <a href="#download">Download</a>
 </p>
 
-![screenshot](https://github.com/ooDams/Marks/blob/main/media/presentation.gif)
+![screenshot](https://github.com/damienRifflart/Marks/blob/main/media/presentation.gif)
 
 ## Key Features
 
@@ -30,7 +30,7 @@ In order for the application to work, you must have a valid [Mon Bureau Numériq
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/ooDams/Marks
+$ git clone https://github.com/damienRifflart/Marks
 
 # Go into the repository
 $ cd Marks
@@ -48,7 +48,7 @@ $ npm start
 
 ## Download
 
-You can [download](https://github.com/ooDams/Marks/releases/tag/v1.4) the latest installable version of Marks for Windows, macOS and Linux.
+You can [download](https://github.com/damienRifflart/Marks/releases/tag/v1.4) the latest installable version of Marks for Windows, macOS and Linux.
 
 
 ## Credits
@@ -60,11 +60,11 @@ This software uses the following open source packages:
 
 ## You may also like...
 
-- [Shapy](https://github.com/ooDams/Shapy) - An iOs sport application.
-- [RentaTram](https://github.com/ooDams/RentaTram) - A simple personnal application.
+- [Shapy](https://github.com/damienRifflart/Shapy) - An iOs sport application.
+- [RentaTram](https://github.com/damienRifflart/RentaTram) - A simple personnal application.
 
 ## Contact
 
 > Gmail: [rifflartdamiencontact.com](rifflartdamiencontact@gmail.com) &nbsp;&middot;&nbsp;
-> GitHub: [@ooDams](https://github.com/ooDams) &nbsp;&middot;&nbsp;
+> GitHub: [@ooDams](https://github.com/damienRifflart) &nbsp;&middot;&nbsp;
 
