@@ -12,7 +12,6 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> 
 </p>
 
 ![screenshot](https://github.com/ooDams/Marks/blob/main/media/presentation.gif)
