@@ -26,7 +26,7 @@
 
 ## How To Use
 
-In order for the application to work, you must have a valid [Mon Bureau Numérique](https://www.monbureaunumerique.fr/) account. From your command line:
+In order for the application to work, you must have a valid [Mon Bureau Numérique](https://www.monbureaunumerique.fr/) account and [git](https://git-scm.com/). From your command line:
 
 ```bash
 # Clone this repository
