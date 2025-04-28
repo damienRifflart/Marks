@@ -65,6 +65,6 @@ This software uses the following open source packages:
 
 ## Contact
 
-> Gmail: [rifflartdamiencontact@gmail.com](rifflartdamiencontact@gmail.com) &nbsp;&middot;&nbsp;
+> Gmail: [rifflartdamien68@gmail.com](rifflartdamien68@gmail.com) &nbsp;&middot;&nbsp;
 > GitHub: [@damienRifflart](https://github.com/damienRifflart) &nbsp;&middot;&nbsp;
 
